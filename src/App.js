@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import LoginPage from "./pages/LoginPage";
 import CoursePage from "./pages/CoursePage";
+import SignupPage from "./pages/SignupPage";
 
 const App = () => {
   // return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
@@ -10,6 +11,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/course/:id" element={<CoursePage />} />
         </Routes>
