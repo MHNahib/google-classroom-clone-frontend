@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import { Login } from "../routes";
 
@@ -89,12 +89,12 @@ const LoginComponent = () => {
                     Submit
                   </button>
                   <p className="text-sm font-light text-gray-500 dark:text-gray-400 mt-2">
-                    <a
-                      href="/signup"
+                    <Link
+                      to="/signup"
                       className="mr-2 font-medium text-primary-600 hover:underline dark:text-primary-500"
                     >
                       Sign up
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
