@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const CoursePage = () => {
-    return (
-        <div>CoursePage</div>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default CoursePage
+export default CoursePage;
